@@ -14,7 +14,7 @@ const password = document.querySelector(`#password`)
 form.addEventListener(`submit` , (event)=>{
     event.preventDefault();
     createUserWithEmailAndPassword(auth, email.value, password.value)
-      .then((userCredential) => {
+    .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
         window.location = `./login.html`
